@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {font-family:Montserrat;src: url(../Assets/Montserrat-Regular.ttf);}*{font-family:Montserrat;}
+
+.jumbotron{margin-bottom:0;border-radius:0;}
+*:hover{
+		transition:all .3s ease;
+}
+body{width:100%;overflow-x:hidden;}
+.item{height:300px;margin:5px;text-align:center;font-size:21px;padding:5px;border-radius:3px;}
+.item > h1{font-size:21px;font-weight:500;font-size:25px;color:coral;}
+.row{justify-items:center;align-items:center;}
+.item > p{width:100%;font-size:21px;padding:2px;}
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+tr,th{padding-left:15px;}
+th{padding-left:15px;}
+table tr:nth-child(even){color:0000;}
+
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+#sub_heading{
+	padding-left:5px;
+	color:green;
+	transition:all .3s ease;
+cursor:pointer;}
+#sub_heading:not(:hover){
+	transition:all .5s ease;
+}
+#wsi{
+	font-size:20px;
+	font-weight:bold;
+	color:grey;
+	border-radius:50%;
+	opacity:0;
+	height:150px;
+	width:150px;
+	font-size:25px;
+	transition:all .3s ease;
+}
+#wsi:hover{
+	transition:all .3s ease;
+	opacity:1;
+	cursor:pointer;
+}
+#wsi:not(:hover){
+	transition:all .3s ease;
+	color:grey;
+	opacity:0;
+}

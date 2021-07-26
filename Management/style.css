@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {font-family:Montserrat;src: url(../Assets/Montserrat-Regular.ttf);}*{font-family:Montserrat;}
+
+.jumbotron{margin-bottom:0;border-radius:0;}
+*:hover{
+		transition:all .3s ease;
+}
+table {
+    border-collapse: collapse;
+	width:100%;
+	border-radius:5px;
+}
+table td, #customers th {
+    border: 1px solid #ddd;
+    padding:5px;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:nth-child(odd){background-color:#bdc3c7;}
+tr:hover {background-color: #ddd;}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+#man_c{
+	width:100%;
+	min-height:40px;
+	background:#F8BBD0;
+	margin:0 auto;text-align:center;}
+#sub_three_cont{margin:3px;}
+img{width:250px !important;height:300px !important;}
+.sub_heading{font-size:24px;}
+.wsi{
+	font-weight:500;
+	color:#2c3e50;
+	font-size:18px;
+	margin-top:-30px;
+}

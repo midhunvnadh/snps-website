@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+	body{height:100%;width:100%;}
+	html{height:100%;width:100%;}
+	*{padding:0px;}
+       #map {
+        height:80%;width:100%;background-position:fixed;
+       }
+
+    </style>
+    <script>
+      function initMap() {
+        var uluru = {lat:8.883676, lng: 76.636441};
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom:18,
+        center: uluru,
+		zoomControl: false,
+		scaleControl: false,
+		scrollwheel: false,
+		disableDoubleClickZoom: true,
+
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+	  
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNfduYOO8daTJR-KOQy573WWzjq1uctwc&callback=initMap">
+    </script>
+  <title>Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../Assets/css/footer-basic-centered.css">
+	<link rel="stylesheet" href="../style/scrollbar.css">
+<link rel="stylesheet" href="../style/nav.min.css">
+<script src = "../style/nav.js"></script>
+  </head>
+<body class = "bg-dark ">
+
+
+      <div id="map"  class=""></div>
+
+<div class="container">
+  <div class="row">
+    <div class="card-body col-sm-5 bg-dark text-light">
+      <h4 class="card-title">School Address</h4>
+      <p class="card-text">Sree Narayana Public School, Vadakkevila P.O., Kollam-691 010</p>
+      <a target = "_blank" href="https://www.google.co.in/maps/dir/''/snps+kollam/data=!4m5!4m4!1m0!1m2!1m1!1s0x3b05fccbc9c07255:0x8308a0017e958447?sa=X&ved=0ahUKEwiH8N_bqfrYAhUENI8KHTp8CvoQ9RcIhwEwCw" class="btn btn-info">See Routes</a>
+    </div>
+    <div class="card-body col-sm-4 bg-dark text-light">
+      <h4 class="card-title">Telephone</h4>
+      <p class="card-text">0474-2729132</p>
+	        <a href="tel:04742729132" class="btn btn-primary">Call</a>
+      <p class="card-text">0474-2728214</p>
+	        <a href="tel:04742728214" class="btn btn-primary">Call</a>
+    </div>
+    <div class="card-body col-sm-3 text-light">
+      <h4 class="card-title">School Email</h4>
+      <p class="card-text">snpskollam@yahoo.com</p>
+      <a href="mailto:snpskollam@yahoo.com" class="btn btn-success">Email</a>
+      <p class="card-text">sujeemca@yahoo.com</p>
+      <a href="mailto:sujeemca@yahoo.com" class="btn btn-success">Email</a>
+    </div>  </div>
+<div class = "row">
+
+     <div class="card-body col-lg-8 text-light text-left">
+  <form action="thankyou.php"  method="POST">
+  <h1>Contact</h1>
+      <div class="form-group">
+      <label for="Name">Name</label>
+      <input type="text" for = "name" class="form-control" id="u_name" placeholder="Enter Name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" for = "email" class="form-control" id="u_email" placeholder="Enter Email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="number" for = "phone" class="form-control" id="u_phone" placeholder="Enter Phone" name="phone">
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" for = "Subject" class="form-control" id="subj" placeholder="Enter Subject" name="subj">
+    </div>
+	<div class="form-group">
+      <label for="message">Message</label>
+      <textarea for = "text" class="form-control" id="message" placeholder="Enter Your Message" name="message" rows = "4"></textarea>
+    </div>
+
+    <input  class="btn btn-primary" type="submit" value = "Send">
+  </form>
+    </div>
+  </div>
+  </div>
+</div>
+		<footer class="footer-basic-centered">
+
+			<p class="footer-company-motto" align = "center">Sree Narayana Public School</p>
+
+			<p class="footer-links">
+				<a href="/index.html">Home</a>
+				&nbsp;
+				<a href="/Management/index.html">Management</a>
+				&nbsp;
+				<a href="/Faculties/index.html">Faculties</a>
+				&nbsp;
+				<a href="/Facilities/index.html">Facilities</a>
+				&nbsp;
+				<a href="/OtherInformations/index.html">About the School</a>
+				&nbsp;
+				<a href="/Contact">Contact</a>
+			</p>
+
+			<p class="footer-company-name">SNPS &copy; 2017</p>
+
+		</footer>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="/" id = "active" style = "background-color:gold;color:cyan;">Home</a>
+  <a href="/Management" id = "active">Management</a>
+  <a href="/Faculties" id = "active">Faculties</a>
+  <a href="/Facilities" id = "active">Facilities</a>
+  <a href="/SSC" id = "active">SSC</a>
+  <a href="/News" id = "active">News</a><hr width= "90%" size = "5">
+  <a href="/Clubs" id = "active">Clubs</a>
+  <a href="/PhotoGallery" id = "active">Photo Gallery</a>
+  <a href="/Activities" id = "active">Activities</a>
+  <a href="/OtherInformations"id = "active">Other Info</a>
+</div>
+
+<span class = "spana" onclick="openNav()" id = "opener"><span class = "spana-wrapper"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span></span>
+
+
+</body>
+</html>

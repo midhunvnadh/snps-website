@@ -1,0 +1,297 @@
+@charset "utf-8";
+ @font-face {
+    font-family:Montserrat;
+    src: url(../Assets/Montserrat-Regular.ttf);
+}
+*{
+    font-family:Montserrat;
+}
+ @keyframes lds-hourglass {
+     0% {
+         transform: rotate(0);
+         animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19) 
+    }
+     50% {
+         transform: rotate(900deg);
+         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1) 
+    }
+     100% {
+         transform: rotate(1800deg) 
+    }
+}
+ @-webkit-keyframes lds-hourglass {
+     0% {
+         -webkit-transform: rotate(0);
+         -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19) 
+    }
+     50% {
+         -webkit-transform: rotate(900deg);
+         -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1) 
+    }
+     100% {
+         -webkit-transform: rotate(1800deg) 
+    }
+}
+ .lds-hourglass{
+     content: " ";
+     position:absolute;
+     z-index:999;
+     margin: auto;
+     left:0;
+     right:0;
+     top:0;
+     bottom:0;
+     display:block;
+     background: center center no-repeat;
+     background-size: cover;
+     width: 0;
+     height: 0;
+     background:none;
+     border-radius: 50%;
+     border: 70px solid;
+     border-color: #fff transparent #fff transparent;
+     animation: lds-hourglass 4s linear infinite;
+     -webkit-animation: lds-hourglass 4s linear infinite;
+}
+ @keyframes change_color {
+     25%{
+         color:coral;
+    }
+     50%{
+         color:red;
+    }
+     75%{
+         color:brown;
+    }
+     100%{
+         color:Tomato 
+    }
+}
+ .heart-wel{
+     animation-name:change_color;
+     animation-duration:1s;
+     animation-iteration-count:infinite;
+     transition:all .3s ease;
+     animation-timing-function: linear;
+}
+ *{
+     font-family: 'Montserrat',sans-serif;
+     cursor:default;
+     font-weight:400;
+}
+ *:hover{
+     transition:all .3s ease;
+}
+ *:not(:hover){
+     transition:all .5s ease;
+}
+ .PG_att{
+     min-height:10px;
+     padding:5px;
+     max-width:100%;
+     min-width:100%;
+     position:relative;
+     background-color:#06C;
+     z-index:1;
+     line-height:auto;
+     color:#333;
+}
+ .PG_att:hover{
+     color:#06C;
+     background:#333;
+     transition:all .3s ease 
+}
+ .lg_cont{
+     align-items: center;
+     justify-content: center;
+     text-align:center;
+     min-height:100vh;
+     width:100%;
+     cursor:default;
+     background-image: url(../Assets/Images/paranoma.jpg);
+     background-size: cover;
+     animation-name:loop;
+     animation-duration:30s;
+     animation-iteration-count:infinite;
+     border-bottom:1px solid cyan;
+     background-attachment:fixed;
+}
+ @media screen and (max-width: 450px) {
+     .lg_cont{
+         background-image: url(../Assets/Images/paranoma.jpg);
+         background-position: 25% 0;
+         border-bottom:1px solid cyan;
+         background-attachment:fixed;
+         animation:none;
+    }
+}
+ @keyframes loop{
+     0% {
+         background-position: 25% 0;
+    }
+     50% {
+         background-position: 100% 0;
+    }
+     100%{
+         background-position:25% 0;
+    }
+}
+ #intro{
+     font-size: 40px;
+     text-outline: 2px 2px #ff0000;
+     color:#90CAF9;
+     font-weight:bold;
+}
+ #intro_sub{
+     font-size: 25px;
+     text-shadow:rgba(255,111,0 ,1);
+     color:#FAFAFA;
+}
+ .welcome-note{
+     min-height:100px;
+     min-width:100vw;
+     padding:25px;
+     background:#00BCD4;
+     margin-top:-1px;
+}
+ #main_att{
+     background:#E3F2FD;
+     width:100%;
+     min-height: 100px;
+     right:0;
+     padding:20px;
+}
+ .al_center{
+     justify-content: center;
+     align-items: center;
+     display:flex;
+}
+ #align_all_conts_center{
+}
+ #main_att_imgs{
+     border-radius:100%;
+}
+ .line-sp{
+     line-height:18pt;
+}
+ a{
+     color:#00BCD4;
+     cursor:pointer;
+}
+ a:hover{
+     text-decoration:none;
+}
+ #main_att_divs{
+     height:360px;
+     width:280px;
+     text-align:center;
+     margin:10px;
+     padding:10px;
+     position:relative;
+     padding-bottom:10px;
+     background:#26A69A;
+     border-radius:2px;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+     transition: all 0.3s cubic-bezier(.25,.8,.25,1) 
+}
+ #main_att_divs:hover > #wow {
+     color: #1B5E20;
+}
+ #main_att_divs:hover{
+     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+     opacity:.9;
+}
+ #main_att_imgs:hover{
+     border-radius:50%;
+     opacity:.8;
+}
+ .bottom-al{
+     position:absolute;
+     bottom:0;
+     margin:0 auto;
+     left:0;
+     right:0;
+     margin:5px;
+}
+ #heading{
+     margin:0 auto;
+     font-size:35px;
+     margin:10px;
+     color:#004D40;
+}
+ #weare{
+     width:100%;
+     min-height:100px;
+     margin:0 auto;
+     background:#ECEFF1;
+     justify-content: center;
+     padding:20px;
+     background:#E0E0E0;
+}
+ .article{
+     width:100%;
+     min-height:100px;
+     margin:0 auto;
+     background:#2c3e50;
+     justify-content: center;
+     text-align:center;
+     padding:20px;
+     color:#bdc3c7;
+     line-height:18pt;
+}
+ h3{
+     min-height:10px!important 
+}
+ #sub_three_cont{
+     text-align: center;
+     height:300px;
+     width:300px;
+     margin:10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background:url(../Assets/Images/students.jpg);
+     background-size:cover;
+     border-radius:50%;
+}
+ #sub_three_cont1{
+     display: flex;
+     height:300px;
+     width:300px;
+     justify-content: center;
+     align-items: center;
+     margin:10px;
+     text-align: center;
+     background:url(../Assets/Images/teacher.jpg);
+     background-size:cover;
+     border-radius:50%;
+}
+ #sub_three_cont2{
+     display: flex;
+     height:300px;
+     width:300px;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin:10px;
+     background:url(../Assets/Images/facilities.jpg);
+     background-size:cover;
+     border-radius:50%;
+}
+ #wsi{
+     font-size:20px;
+     font-weight:bold;
+     color:black;
+     opacity:0.8;
+     justify-content: center;
+     align-items: center;
+     width:300px;
+     cursor:default;
+     font-size:25px;
+     transition:all .3s ease;
+}
+ #wsi:hover{
+     transition:all .3s ease;
+     cursor:pointer;
+}
+ 

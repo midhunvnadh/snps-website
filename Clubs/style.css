@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {font-family:Montserrat;src: url(../Assets/Montserrat-Regular.ttf);}*{font-family:Montserrat;}
+
+.jumbotron{margin-bottom:0;border-radius:0;}
+	
+
+*:hover{
+		transition:all .3s ease;
+}
+body{width:100%;overflow-x:hidden;}
+.item{height:300px;margin:5px;text-align:center;font-size:21px;padding:5px;border-radius:15px;}
+.item > h1{font-size:21px;font-weight:500;font-size:25px;color:coral;}
+.item > p{width:100%;background:tomato;font-size:18px;padding:2px;}
+
+@media (max-width: 1200px) {
+.item{min-height:25px;height:auto;}
+}
+#sub_heading{
+color:green;
+	transition:all .3s ease;
+cursor:pointer;}
+#sub_heading:not(:hover){
+	transition:all .5s ease;
+}
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+tr,th{padding-left:15px;}
+th{padding-left:15px;}
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}

@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {font-family:Montserrat;src: url(../Assets/Montserrat-Regular.ttf);}*{font-family:Montserrat;}
+
+.jumbotron{margin-bottom:0;border-radius:0;}
+*:hover{
+		transition:all .3s ease;
+}
+body{width:100%;overflow-x:hidden;}
+.item{height:300px;margin:5px;text-align:center;font-size:21px;padding:5px;border-radius:3px;}
+.item > h1{font-size:21px;font-weight:500;font-size:25px;color:coral;}
+.row{justify-items:center;align-items:center;}
+.item > p{width:100%;background:tomato;font-size:18px;padding:2px;}
+
+@media (max-width: 1200px) {
+.item{min-height:25px;height:auto;}
+}
+
+#sub_heading{}
+#sub_heading:hover{
+	color:green;
+	transition:all .3s ease;
+cursor:pointer;}
+#sub_heading:not(:hover){
+	transition:all .5s ease;
+}

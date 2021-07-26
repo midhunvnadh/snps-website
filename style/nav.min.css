@@ -1,0 +1,85 @@
+.sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color:rgba(255,0,0,0.3);
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top:60px;
+}
+ .sidenav a {
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 20px;
+     color: #EEEEEE;
+     display: block;
+     transition: 0.3s;
+}
+ html, body {
+     overflow-x: hidden;
+}
+ .sidenav a:hover {
+     color: #F57F17;
+}
+ #active {
+     width: 250px;
+     min-width: 10px;
+}
+ #active:hover {
+     color: green;
+     background: cyan;
+}
+ .sidenav .closebtn {
+     position: absolute;
+     top: 0;
+     margin-left: -5px;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+}
+ @media screen and (max-height: 450px) {
+     .sidenav {
+         padding-top: 15px;
+    }
+     .sidenav a {
+         font-size: 18px;
+    }
+}
+ .sidenav>hr {
+     display: none;
+}
+ .spana {
+     z-index: 500;
+     box-sizing: content-box;
+     background:rgba(192,192,192,0.3);
+     color: white;
+     border-bottom-right-radius: 35px;
+     border-top-right-radius: 35px;
+     padding: 8px;
+     top: 50%;
+     height: 80px;
+     margin-top: -40px;
+     display: flex;
+     vertical-align: middle;
+     font-size: 50px;
+     width: 45px;
+     cursor: pointer;
+     float: left;
+     position: fixed;
+     left: 0;
+}
+ .icon-bar {
+     display: block;
+     height: 5px;
+     margin: 5px;
+     width: 40px;
+     background-color: #282828;
+}
+ .spana-wrapper {
+     height: auto;
+     width: 35px;
+     margin-top: 50%;
+}
